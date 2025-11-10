@@ -1,0 +1,57 @@
+/**
+ * @file index.js
+ * @description Central router that mounts all domain-specific Express sub-routers under /api.
+ * @module routes/index
+ */
+
+import { Router } from 'express';
+import booking from './BookingRoute.js';
+import product from './ProductRoute.js';
+import providerAvailability from './ProviderAvailabilityRoute.js';
+import sellerOverview from './SellerOverview.js';
+import user from './UserRoute.js';
+import adminBlogRoute from './admin/AdminBlogRoute.js';
+import adminOverviewRoute from './admin/AdminOverviewRoute.js';
+import adminProductRoute from './admin/AdminProductRoute.js';
+import adminRefundRoute from './admin/AdminRefundRoute.js';
+import adminUserRoute from './admin/AdminUserRoute.js';
+import chat from './chat/ChatRoute.js';
+import cart from './customer/CartRoute.js';
+import customerOrderRoute from './customer/OrderRoute.js';
+import customerRefundRoute from './customer/RefundRoute.js';
+import wishList from './customer/WishListRoute.js';
+import providerRefundRoute from './provider/RefundRoute.js';
+import review from './reviewRoute.js';
+import sellerOrderRoute from './seller/OrderRoute.js';
+import sellerPayoutRoute from './seller/PayoutRoute.js';
+import sellerRefundRoute from './seller/RefundRoute.js';
+import sellerStripeRoute from './seller/StripeRoute.js';
+
+const router = Router();
+
+router.use('/user', user);
+router.use('/product', product);
+router.use('/review', review);
+router.use('/booking', booking);
+router.use('/cart', cart);
+router.use('/customer/refund', customerRefundRoute);
+router.use('/wishlist', wishList);
+
+router.use('/provider-availability', providerAvailability);
+
+router.use('/admin/users', adminUserRoute);
+router.use('/admin/overview', adminOverviewRoute);
+router.use('/admin/products', adminProductRoute);
+router.use('/admin/blog', adminBlogRoute);
+
+router.use('/customer/order', customerOrderRoute);
+router.use('/admin/refund', adminRefundRoute);
+router.use('/seller/wallet', sellerPayoutRoute);
+router.use('/seller/stripe', sellerStripeRoute);
+router.use('/seller/order', sellerOrderRoute);
+router.use('/chat', chat);
+router.use('/seller/overview', sellerOverview);
+router.use('/seller/refund', sellerRefundRoute);
+router.use('/provider/refund', providerRefundRoute);
+
+export default router;
