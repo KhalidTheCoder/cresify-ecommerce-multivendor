@@ -1,0 +1,69 @@
+/**
+ * @file middleware.js
+ * @description Next.js edge middleware for JWT-based route protection on /dashboard/* paths.
+ * @module middleware
+ */
+
+import { getToken } from 'next-auth/jwt';
+import { NextResponse } from 'next/server';
+
+export default async function middleware(req) {
+  const token = await getToken({
+    req,
+    secret: process.env.NEXTAUTH_SECRET,
+    secureCookie: process.env.NODE_ENV === 'production',
+  });
+
+  if (!token) {
+    return NextResponse.redirect(new URL('/login', req.url));
+  }
+
+  //   if (pathname === "/dashboard/payments") {
+
+  //     if (userRole !== 'customer' && userRole !== 'butler') {
+  //       return NextResponse.redirect(new URL('/login', req.url));
+  //     }
+  //   }
+
+  //   if (pathname === "/dashboard/adminTools") {
+
+  //     if (userRole !== 'admin') {
+  //       return NextResponse.redirect(new URL('/login', req.url));
+  //     }
+  //   }
+
+  //   if (pathname === "/dashboard/schedule") {
+  //     if (userRole !== 'butler') {
+  //       return NextResponse.redirect(new URL('/login', req.url));
+  //     }
+  //   }
+
+  return NextResponse.next();
+}
+
+export const config = {
+  matcher: [
+    '/dashboard',
+    '/dashboard/products',
+    '/dashboard/store-profile',
+    '/dashboard/payments',
+    '/dashboard/profile',
+    '/dashboard/analytics',
+    '/dashboard/reviews',
+    '/dashboard/messages',
+    '/dashboard/settings',
+    '/dashboard/admin-dashboard/users',
+    '/dashboard/admin-dashboard/products',
+    '/dashboard/admin-dashboard/services',
+    '/dashboard/orders',
+    '/dashboard/booking',
+    '/dashboard/payments',
+    '/dashboard/content',
+    '/dashboard/messages',
+    '/dashboard/settings',
+    '/profile',
+    '/cart',
+    '/dashboard/refund',
+    '/book-now',
+  ],
+};
