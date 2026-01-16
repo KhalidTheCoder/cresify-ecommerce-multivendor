@@ -1,0 +1,652 @@
+{
+  "dashboard": {
+    "title": "Resumen del Tablero",
+    "welcome": "¡Bienvenido de nuevo!",
+    "role": "Administrador del Sistema",
+    "stats": {
+      "totalBuyers": "Total de Compradores",
+      "totalSellers": "Total de Vendedores",
+      "totalServiceProviders": "Total de Proveedores de Servicios",
+      "totalProducts": "Total de Productos",
+      "totalServices": "Total de Servicios",
+      "totalBookedServices": "Total de Servicios Reservados",
+      "totalOrders": "Total de Órdenes",
+      "platformRevenue": "Ingresos de la Plataforma"
+    },
+    "charts": {
+      "salesOverview": "Resumen de Ventas",
+      "serviceOverview": "Resumen de Servicios",
+      "filterAll": "Todos",
+      "total": "Total",
+      "revenue": "Ingresos",
+      "month": "Mes"
+    },
+    "tables": {
+      "recentOrders": "Órdenes Recientes",
+      "viewAll": "Ver Todo",
+      "orderId": "ID de Orden",
+      "amount": "Monto",
+      "sellerPayout": "Pago al Vendedor",
+      "status": "Estado",
+      "date": "Fecha",
+      "loading": "Cargando...",
+      "empty": "No se encontraron órdenes"
+    },
+    "status": {
+      "paid": "Pagado",
+      "pending": "Pendiente",
+      "canceled": "Cancelado"
+    }
+  },
+  "userManagement": {
+    "title": "Gestión de Usuarios",
+    "subtitle": "Administra todos los usuarios de la plataforma",
+    "stats": {
+      "totalUsers": "Total de Usuarios",
+      "totalSellers": "Total de Vendedores",
+      "totalBuyers": "Total de Compradores",
+      "totalServiceProviders": "Total de Proveedores de Servicios",
+      "userDistribution": "Distribución de Usuarios",
+      "users": "Usuarios"
+    },
+    "tabs": {
+      "allUsers": "Todos los Usuarios",
+      "buyer": "Comprador",
+      "seller": "Vendedor",
+      "serviceProvider": "Proveedor de Servicios"
+    },
+    "search": {
+      "placeholder": "Buscar por nombre o email"
+    },
+    "table": {
+      "headers": {
+        "user": "USUARIO",
+        "contact": "CONTACTO",
+        "type": "TIPO",
+        "status": "ESTADO",
+        "registered": "REGISTRADO",
+        "action": "ACCIÓN"
+      },
+      "loading": "Cargando...",
+      "noUsers": "No se encontraron usuarios.",
+      "view": "Ver",
+      "phone": "Teléfono"
+    },
+    "modal": {
+      "title": "Detalles del Usuario",
+      "loading": "Cargando...",
+      "email": "Correo:",
+      "phone": "Teléfono:",
+      "status": "Estado:",
+      "registered": "Registrado:",
+      "noDetails": "No se encontraron detalles del usuario.",
+      "close": "Cerrar"
+    },
+    "status": {
+      "active": "Activo",
+      "pending": "Pendiente",
+      "suspend": "Suspendido"
+    },
+    "roles": {
+      "buyer": "Comprador",
+      "seller": "Vendedor",
+      "provider": "Proveedor de Servicios"
+    },
+    "alerts": {
+      "success": "Éxito",
+      "error": "Error",
+      "statusUpdated": "Estado del usuario actualizado exitosamente",
+      "updateFailed": "Error al actualizar el estado"
+    },
+    "chart": {
+      "noData": "No hay datos disponibles para el gráfico"
+    }
+  },
+  "productManagement": {
+    "title": "Gestión de Productos",
+    "subtitle": "Administra todos los productos del mercado",
+    "stats": {
+      "totalProducts": "Total de Productos",
+      "active": "Activos",
+      "pendingApprove": "Pendientes de Aprobación",
+      "rejected": "Rechazados"
+    },
+    "search": {
+      "placeholder": "Buscar por nombre de producto o vendedor..."
+    },
+    "filters": {
+      "allProduct": "Todos los Productos",
+      "delivered": "Entregados",
+      "pending": "Pendientes",
+      "processing": "Procesando",
+      "canceled": "Cancelados",
+      "shipping": "En Envío"
+    },
+    "table": {
+      "headers": {
+        "product": "PRODUCTO",
+        "seller": "VENDEDOR",
+        "category": "CATEGORÍA",
+        "price": "PRECIO",
+        "stock": "INVENTARIO",
+        "status": "ESTADO",
+        "actions": "ACCIONES"
+      },
+      "loading": "Cargando productos...",
+      "noProducts": "No se encontraron productos",
+      "noImage": "Sin Imagen",
+      "na": "N/D",
+      "view": "Ver",
+      "selectOption": "Seleccionar una opción"
+    },
+    "modal": {
+      "title": "Detalles del Producto",
+      "loading": "Cargando...",
+      "noDetails": "No se encontraron detalles del producto.",
+      "close": "Cerrar",
+      "fields": {
+        "name": "Nombre:",
+        "seller": "Vendedor:",
+        "category": "Categoría:",
+        "price": "Precio:",
+        "stock": "Inventario:",
+        "status": "Estado:",
+        "created": "Creado:"
+      }
+    },
+    "alerts": {
+      "confirmTitle": "¿Estás seguro?",
+      "confirmText": "Estás a punto de marcar este producto como \"{{status}}\".",
+      "confirmButton": "¡Sí, actualizar!",
+      "cancelButton": "Cancelar",
+      "updatedTitle": "¡Actualizado!",
+      "updatedText": "Estado del producto actualizado a \"{{status}}\".",
+      "errorTitle": "Error",
+      "errorText": "Error al actualizar el estado del producto."
+    },
+    "status": {
+      "active": "Activo",
+      "rejected": "Rechazado"
+    }
+  },
+  "bookings": {
+    "title": "Gestión de Reservas",
+    "subtitle": "Administra todas las reservas ({{count}} total)",
+    "stats": {
+      "totalBookings": "Reservas Totales",
+      "pending": "Pendientes",
+      "confirmed": "Confirmadas",
+      "revenue": "Ingresos",
+      "fromLastMonth": "desde el mes pasado",
+      "requiresAttention": "Requiere atención"
+    },
+    "actions": {
+      "exportCSV": "Exportar CSV",
+      "printReport": "Imprimir Reporte",
+      "searchPlaceholder": "Buscar por nombre del cliente, email o ID de reserva...",
+      "perPage": "por página",
+      "viewDetails": "Ver Detalles",
+      "acceptBooking": "Aceptar Reserva",
+      "deleteBooking": "Eliminar Reserva",
+      "exportAs": "Exportando datos como {{format}}",
+      "deleteConfirm": "¿Estás seguro de que quieres eliminar esta reserva?"
+    },
+    "filters": {
+      "allStatus": "Todos los Estados",
+      "pending": "Pendiente",
+      "accept": "Aceptado",
+      "processing": "Procesando",
+      "completed": "Completado",
+      "canceled": "Cancelado"
+    },
+    "table": {
+      "headers": {
+        "bookingId": "ID de Reserva",
+        "customer": "Cliente",
+        "provider": "Proveedor",
+        "dateTime": "Fecha y Hora",
+        "status": "Estado",
+        "payment": "Pago",
+        "actions": "Acciones"
+      },
+      "emptyState": {
+        "title": "No se encontraron reservas",
+        "search": "Intenta ajustar tu búsqueda o filtros",
+        "noBookings": "Aún no se han hecho reservas"
+      },
+      "paymentMethod": {
+        "card": "Tarjeta de Crédito"
+      },
+      "duration": "Duración"
+    },
+    "status": {
+      "accept": "Aceptado",
+      "pending": "Pendiente",
+      "processing": "Procesando",
+      "canceled": "Cancelado",
+      "completed": "Completado"
+    },
+    "paymentStatus": {
+      "completed": "Completado",
+      "processing": "Procesando",
+      "failed": "Fallido"
+    },
+    "modal": {
+      "title": "Detalles de la Reserva",
+      "bookingId": "Reserva #{{id}}",
+      "totalAmount": "Monto Total",
+      "createdOn": "Creada el {{date}}",
+      "customerInfo": "Información del Cliente",
+      "providerInfo": "Información del Proveedor",
+      "bookingDetails": "Detalles de la Reserva",
+      "paymentInfo": "Información de Pago",
+      "notesActions": "Notas y Acciones",
+      "sections": {
+        "serviceDate": "Fecha del Servicio",
+        "timeSlot": "Horario",
+        "duration": "Duración",
+        "serviceType": "Tipo de Servicio",
+        "location": "Ubicación",
+        "availability": "Disponibilidad",
+        "paymentMethod": "Método de Pago",
+        "paymentStatus": "Estado del Pago",
+        "transactionDate": "Fecha de Transacción",
+        "bookingStatus": "Estado de la Reserva",
+        "lastUpdated": "Última Actualización",
+        "bookingId": "ID de Reserva"
+      },
+      "availability": {
+        "available": "Disponible",
+        "unavailable": "No Disponible"
+      },
+      "notes": {
+        "placeholder": "Añadir notas sobre esta reserva..."
+      },
+      "buttons": {
+        "sendReminder": "Enviar Recordatorio",
+        "confirmBooking": "Confirmar Reserva",
+        "reschedule": "Reprogramar",
+        "cancelBooking": "Cancelar Reserva",
+        "close": "Cerrar",
+        "saveChanges": "Guardar Cambios"
+      }
+    },
+    "loading": {
+      "loading": "Cargando reservas...",
+      "error": {
+        "title": "Error al Cargar Reservas",
+        "message": "Por favor, inténtalo de nuevo más tarde."
+      }
+    },
+    "pagination": {
+      "showing": "Mostrando {{start}} a {{end}} de {{total}} reservas"
+    }
+  },
+  "serviceProviders": {
+    "title": "Proveedores de Servicios",
+    "subtitle": "Administra todos los proveedores de servicios y sus actividades",
+    "stats": {
+      "totalProviders": "Total de Proveedores",
+      "active": "Activos",
+      "pending": "Pendientes de Aprobación",
+      "suspended": "Suspendidos",
+      "fromLastMonth": "desde el mes pasado",
+      "ofTotal": "{{percentage}}% del total",
+      "requiresAttention": "Requiere atención",
+      "needsReview": "Necesita revisión"
+    },
+    "actions": {
+      "export": "Exportar",
+      "print": "Imprimir",
+      "addProvider": "Agregar Proveedor",
+      "retry": "Reintentar",
+      "searchPlaceholder": "Buscar proveedores por nombre, email, nombre de tienda o teléfono...",
+      "perPage": "por página",
+      "view": "Ver",
+      "activate": "Activar",
+      "suspend": "Suspender",
+      "setPending": "Establecer como Pendiente",
+      "sendMessage": "Enviar Mensaje"
+    },
+    "filters": {
+      "allCategories": "Todas las Categorías",
+      "homeGarden": "Hogar y Jardín",
+      "electronics": "Electrónicos",
+      "services": "Servicios",
+      "sports": "Deportes",
+      "other": "Otros",
+      "allStatus": "Todos los Estados",
+      "active": "Activo",
+      "pending": "Pendiente",
+      "suspend": "Suspendido",
+      "status": "Estado",
+      "category": "Categoría"
+    },
+    "providerInfo": {
+      "contactInformation": "Información de Contacto",
+      "businessInformation": "Información del Negocio",
+      "serviceDetails": "Detalles del Servicio",
+      "workingSchedule": "Horario de Trabajo",
+      "registrationDetails": "Detalles de Registro",
+      "serviceImages": "Imágenes del Servicio",
+      "manageStatus": "Gestionar Estado"
+    },
+    "fields": {
+      "email": "Correo",
+      "phone": "Teléfono",
+      "address": "Dirección",
+      "shopName": "Nombre de Tienda/Negocio",
+      "serviceName": "Nombre del Servicio",
+      "category": "Categoría",
+      "hourlyRate": "Tarifa por Hora",
+      "serviceArea": "Área de Servicio",
+      "serviceRadius": "Radio de Servicio",
+      "description": "Descripción",
+      "workingHours": "Horas de Trabajo",
+      "workingDays": "Días de Trabajo",
+      "slotDuration": "Duración del Turno",
+      "registrationDate": "Fecha de Registro",
+      "createdAt": "Creado",
+      "lastUpdated": "Última Actualización",
+      "nationalId": "ID Nacional"
+    },
+    "status": {
+      "active": "Activo",
+      "pending": "Pendiente",
+      "suspend": "Suspendido"
+    },
+    "modals": {
+      "changeStatus": {
+        "title": "Cambiar Estado del Proveedor",
+        "updateStatus": "Actualizar estado de cuenta de {{name}}",
+        "currentStatus": "Estado Actual:",
+        "newStatus": "Nuevo Estado:",
+        "notes": {
+          "active": "El proveedor podrá recibir reservas y usar todas las funciones.",
+          "suspend": "El proveedor será suspendido temporalmente y no podrá recibir nuevas reservas.",
+          "pending": "El proveedor será marcado como pendiente de aprobación y no podrá recibir reservas."
+        },
+        "cancel": "Cancelar",
+        "confirmUpdate": "Confirmar Actualización",
+        "updating": "Actualizando..."
+      },
+      "exportOptions": {
+        "title": "Opciones de Exportación",
+        "selectFormat": "Seleccionar formato de exportación",
+        "formatCSV": "CSV (Excel)",
+        "formatPDF": "Reporte PDF",
+        "formatExcel": "Archivo Excel",
+        "includeData": "Incluir Datos",
+        "allProviders": "Todos los Proveedores",
+        "filteredProviders": "Filtro Actual ({{count}} proveedores)",
+        "selectedProviders": "Proveedores Seleccionados",
+        "columns": "Columnas a Incluir",
+        "allColumns": "Todas las Columnas",
+        "basicInfo": "Información Básica",
+        "contactInfo": "Información de Contacto",
+        "serviceInfo": "Información del Servicio",
+        "statusInfo": "Información de Estado",
+        "cancel": "Cancelar",
+        "export": "Exportar",
+        "exporting": "Exportando..."
+      }
+    },
+    "table": {
+      "emptyState": {
+        "title": "No se encontraron proveedores",
+        "search": "Intenta ajustar tu búsqueda o filtros",
+        "noProviders": "Aún no se han registrado proveedores de servicios"
+      },
+      "showing": "Mostrando {{start}} a {{end}} de {{total}} proveedores",
+      "joined": "Se unió el {{date}}"
+    },
+    "loading": {
+      "loading": "Cargando proveedores de servicios...",
+      "error": {
+        "title": "Error al Cargar Proveedores",
+        "message": "Por favor, inténtalo de nuevo más tarde."
+      }
+    },
+    "notifications": {
+      "statusUpdated": "Estado actualizado exitosamente a {{status}}",
+      "statusUpdateFailed": "Error al actualizar el estado. Por favor, inténtalo de nuevo.",
+      "exportStarted": "Exportación iniciada. Tu archivo se descargará en breve.",
+      "exportFailed": "Error en la exportación. Por favor, inténtalo de nuevo."
+    }
+  },
+  "articles": {
+    "title": "Todos los Artículos",
+    "addArticle": "+ Agregar Artículos",
+    "emptyState": {
+      "title": "No se Encontraron Artículos",
+      "description": "Comienza creando tu primer artículo para compartir con tu audiencia."
+    },
+    "loading": "Cargando artículos...",
+    "error": "Error al cargar artículos. Por favor, inténtalo de nuevo.",
+    "loadMore": "Cargar Más",
+    "card": {
+      "readMore": "Leer Más",
+      "category": "Categoría",
+      "date": "Fecha"
+    },
+    "modal": {
+      "addTitle": "Agregar Artículos",
+      "editTitle": "Editar Artículo",
+      "close": "Cerrar",
+      "cancel": "Cancelar",
+      "uploadArticle": "Subir Artículo",
+      "updateArticle": "Actualizar Artículo",
+      "fields": {
+        "image": "Imagen del Artículo",
+        "uploadClick": "Haz clic para subir imagen",
+        "fileTypes": "PNG, JPG hasta 15MB",
+        "title": "Título",
+        "titlePlaceholder": "Ingresa el título",
+        "category": "Categoría",
+        "selectCategory": "Seleccionar Categoría",
+        "details": "Detalles",
+        "detailsPlaceholder": "Detalles del artículo..."
+      },
+      "validation": {
+        "required": "Por favor, completa todos los campos requeridos",
+        "imageRequired": "Por favor, sube una imagen",
+        "invalidFileType": "Por favor, sube un archivo de imagen válido (PNG, JPG, GIF o WebP)",
+        "fileTooLarge": "Por favor, sube una imagen menor a 15MB"
+      },
+      "success": {
+        "created": "Artículo creado exitosamente",
+        "updated": "Artículo actualizado exitosamente"
+      },
+      "error": {
+        "title": "Error",
+        "failed": "Error al guardar el artículo",
+        "fileTooLarge": "El archivo de imagen es muy grande. Por favor, sube una imagen menor a 15MB."
+      }
+    },
+    "actions": {
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "export": "Exportar Artículos",
+      "print": "Imprimir Reporte"
+    },
+    "export": {
+      "title": "Exportar Artículos",
+      "selectFormat": "Seleccionar formato de exportación",
+      "formatCSV": "CSV (Excel)",
+      "formatPDF": "Reporte PDF",
+      "includeData": "Incluir Datos",
+      "allArticles": "Todos los Artículos",
+      "filteredArticles": "Artículos Actuales ({{count}})",
+      "columns": "Columnas a Incluir",
+      "allColumns": "Todas las Columnas",
+      "basicInfo": "Información Básica",
+      "contentInfo": "Información de Contenido",
+      "categoryInfo": "Información de Categoría",
+      "dateInfo": "Información de Fecha",
+      "exporting": "Exportando...",
+      "export": "Exportar"
+    }
+  },
+  "refund": {
+    "title": "Gestión de Reembolsos",
+    "loading": "Cargando datos de reembolso...",
+    "totalRefunds": "Total: {{count}} solicitudes de reembolso",
+    "itemsPerPage": "Artículos por página:",
+    "noRefunds": "No se encontraron solicitudes de reembolso",
+    "table": {
+      "headers": {
+        "refundId": "ID de Reembolso",
+        "customer": "Cliente",
+        "seller": "Vendedor",
+        "amount": "Monto",
+        "status": "Estado",
+        "date": "Fecha",
+        "actions": "Acciones"
+      }
+    },
+    "status": {
+      "approved": "Aprobado",
+      "rejected": "Rechazado",
+      "requested": "Pendiente",
+      "processing": "Procesando",
+      "unknown": "Desconocido"
+    },
+    "modal": {
+      "title": "Detalles del Reembolso",
+      "basicInfo": "Información Básica",
+      "customerInfo": "Información del Cliente",
+      "sellerInfo": "Información del Vendedor",
+      "refundReason": "Motivo del Reembolso",
+      "evidence": "Evidencia",
+      "refundItems": "Artículos para Reembolsar",
+      "processRefund": "Procesar Reembolso",
+      "sections": {
+        "refundInfo": "Información del Reembolso",
+        "refundId": "ID de Reembolso:",
+        "amount": "Monto:",
+        "status": "Estado:",
+        "requested": "Solicitado:",
+        "customer": {
+          "name": "Nombre:",
+          "email": "Correo:",
+          "phone": "Teléfono:"
+        },
+        "seller": {
+          "shopName": "Nombre de la Tienda:",
+          "sellerName": "Nombre del Vendedor:",
+          "email": "Correo:"
+        }
+      },
+      "itemsTable": {
+        "product": "Producto",
+        "quantity": "Cantidad",
+        "price": "Precio",
+        "amount": "Monto"
+      },
+      "actionForm": {
+        "title": "Procesar Reembolso",
+        "action": "Acción",
+        "partialAmount": "Monto Parcial (Máx: {{amount}})",
+        "enterAmount": "Ingresa el monto",
+        "actions": {
+          "approve": "Aprobar Reembolso Completo",
+          "partial": "Aprobar Reembolso Parcial",
+          "reject": "Rechazar Reembolso"
+        }
+      },
+      "buttons": {
+        "cancel": "Cancelar",
+        "rejectRefund": "Rechazar Reembolso",
+        "approvePartial": "Aprobar Parcial",
+        "approveRefund": "Aprobar Reembolso",
+        "processing": "Procesando...",
+        "viewDetails": "Ver Detalles"
+      },
+      "messages": {
+        "error": {
+          "selectRefund": "Por favor, selecciona un reembolso y asegúrate de estar conectado.",
+          "invalidAmount": "Por favor, ingresa un monto válido para el reembolso parcial.",
+          "failed": "Error al procesar el reembolso."
+        },
+        "success": "Reembolso {{action}} exitosamente!"
+      }
+    },
+    "pagination": {
+      "page": "Página {{current}} de {{total}}",
+      "goToPage": "Ir a la página:",
+      "previous": "Anterior",
+      "next": "Siguiente"
+    }
+  },
+  "serviceRefund": {
+    "title": "Reembolsos de Servicios",
+    "pageTitle": "Reembolsos de Reservas de Servicios",
+    "loading": "Cargando datos de reembolso...",
+    "totalRefunds": "Total: {{count}} solicitudes de reembolso",
+    "itemsPerPage": "Artículos por página:",
+    "noRefunds": "No se encontraron solicitudes de reembolso",
+    "table": {
+      "headers": {
+        "refundId": "ID de Reembolso",
+        "customer": "Cliente",
+        "amount": "Monto",
+        "status": "Estado",
+        "date": "Fecha",
+        "actions": "Acciones"
+      }
+    },
+    "status": {
+      "approved": "Aprobado",
+      "rejected": "Rechazado",
+      "requested": "Pendiente",
+      "processing": "Procesando",
+      "refunded_full": "Reembolsado",
+      "partial_refunded": "Parcialmente Reembolsado",
+      "under_review": "En Revisión",
+      "unknown": "Desconocido"
+    },
+    "modal": {
+      "title": "Detalles del Reembolso",
+      "sections": {
+        "refundInfo": "Información del Reembolso",
+        "customerInfo": "Información del Cliente",
+        "refundReason": "Motivo del Reembolso",
+        "evidence": "Evidencia",
+        "fields": {
+          "refundId": "ID de Reembolso:",
+          "amount": "Monto:",
+          "status": "Estado:",
+          "requested": "Solicitado:",
+          "customerName": "Nombre:",
+          "customerEmail": "Correo:",
+          "customerPhone": "Teléfono:"
+        }
+      }
+    },
+    "buttons": {
+      "viewDetails": "Ver Detalles",
+      "approve": "Aprobar",
+      "reject": "Rechazar",
+      "process": "Procesar",
+      "processing": "Procesando...",
+      "close": "Cerrar"
+    },
+    "alerts": {
+      "approveConfirm": "¿Aprobar esta solicitud de reembolso?",
+      "rejectConfirm": "¿Rechazar esta solicitud de reembolso?",
+      "processConfirm": "¿Procesar este reembolso ahora?",
+      "approveSuccess": "Reembolso aprobado exitosamente",
+      "rejectSuccess": "Reembolso rechazado exitosamente",
+      "processSuccess": "Reembolso procesado exitosamente",
+      "approveFailed": "Error al aprobar el reembolso",
+      "rejectFailed": "Error al rechazar el reembolso",
+      "processFailed": "Error al procesar el reembolso"
+    },
+    "pagination": {
+      "page": "Página {{current}} de {{total}}",
+      "goToPage": "Ir a la página:",
+      "previous": "Anterior",
+      "next": "Siguiente"
+    }
+  }
+}
